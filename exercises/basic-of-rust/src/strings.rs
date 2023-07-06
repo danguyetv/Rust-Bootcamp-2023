@@ -7,7 +7,7 @@ fn exercise1(color: &str) -> String {
 // Exercise 2
 // Fix all errors without adding newline
 fn exercise2() -> String {
-    let s = String::from("hello");
+    let s: String::from("hello");
     s.push(',');
     s.push(" world");
     s += "!".to_string();
@@ -26,14 +26,14 @@ fn exercise3() -> String {
 // Reverse a string
 
 fn reverse_string(input: &str) -> String {
-    todo!()
+    input.chars().rev().collect()
 }
 
 
 // Exercise 5
 // Check if a string is a palindrome
 fn is_palindrome(word: &str) -> bool {
-    todo!()
+    word.to_lowercase()= word.chars().rev().collect::<String>().to_lowercase()
 }
 
 // Exercise 6
